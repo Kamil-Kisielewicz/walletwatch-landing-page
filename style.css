@@ -21,6 +21,7 @@
   --discord-color: #5865F2;
   --twitter-color: #1DA1F2;
   --prim-color: #f15c41;
+  /*--prim-color: orange;*/
   --prim-color-shade1: #f17c41;
   --prim-color-shade2: #f16d41;
   --border-radius: 4px;
@@ -144,6 +145,9 @@ hr {
 }
 .nav__logo {
   margin-right: 4px;
+}
+.nav__logo-name {
+  color: var(--black);
 }
 .nav__hamburger {
   height: 30px;
@@ -312,12 +316,10 @@ body.mobile-nav-open .nav__mobile-nav {
 }
 .btn.btn-discord {
   color: var(--white);
-  /*border: 1px solid var(--prim-color);*/
   background: var(--discord-color);
 }
 .btn.btn-twitter {
   color: var(--white);
-  /*border: 1px solid var(--prim-color);*/
   background: var(--twitter-color);
 }
 
@@ -421,6 +423,37 @@ body.mobile-nav-open .nav__mobile-nav {
   margin-bottom: 0.2em;
 }
 
+@media screen and (max-width: 768px) {
+  .header__container {
+    align-items: center;
+  }
+  .header__text {
+    text-align: center;
+  }
+  .header__text-text {
+    max-width: 600px;
+    text-align: center;
+  }
+  .btn-group {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+  .nav__hamburger {
+    display: none;
+  }
+  .nav__nav-desktop {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+  .nav__desktop-item {
+    margin: 0 0.25em;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .header__container {
     align-items: center;
@@ -467,10 +500,16 @@ body.mobile-nav-open .nav__mobile-nav {
     margin-right: 1.5em;
   }
   .img-screen-ui {
-    width: 500px;
+    max-height: 700px;
+    max-width: 500px;
     display: block;
     margin: 0 auto;
   }
+  /*.img-screen-ui {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }*/
   .patterns-left {
     left: 0;
   }

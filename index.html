@@ -1,3 +1,15 @@
+<!-- 
+TO-DO:
+- add logo
+- change color scheme where necessary
+- image:
+  - add actual images
+  - make a mobile version
+- add discord link? or remove it
+- change fonts?
+- remove hamburger
+
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,33 +17,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Prudent - Landing page for mobile application</title>
+    <title>WalletWatch - The Ethereum Social Network</title>
   </head>
   <body>
     <nav class="nav">
       <div class="nav__container container">
         <div class="nav__left">
-          <a href="/">
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-              class="nav__logo"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0H30V30H0V0Z" fill="#F15C41" />
-            </svg>
-
             <span class="nav__logo-name">WalletWatch</span>
-          </a>
         </div>
         <div class="nav__right">
           <button class="nav__hamburger" aria-label="Menu"></button>
           <ul class="nav__nav-desktop">
             <li class="nav__desktop-item">
               <a
-                href="https://github.com/vickOnRails/Prudent"
+                href="https://discord.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn-discord nav__desktop-link"
@@ -39,7 +38,7 @@
               >
             </li>
             <li class="nav__desktop-item">
-              <a href="#" class="btn btn-twitter nav__desktop-link">Twitter</a>
+              <a href="https://twitter.com/usewalletwatch" class="btn btn-twitter nav__desktop-link">Twitter</a>
             </li>
           </ul>
         </div>
@@ -50,7 +49,7 @@
           <ul class="nav__mobile-links">
             <li class="nav__mobiile-item">
               <a
-                href="https://github.com/vickOnRails/Prudent"
+                href="https://discord.com"
                 targe="_blank"
                 rel="noopener noreferrer"
                 class="nav__mobile-link"
@@ -59,7 +58,7 @@
             </li>
             <li class="nav__mobiile-item">
               <a
-                href="https://github.com/vickOnRails/Prudent"
+                href="https://twitter.com/usewalletwatch"
                 targe="_blank"
                 rel="noopener noreferrer"
                 class="nav__mobile-link"
@@ -81,133 +80,22 @@
           </p>
 
           <div class="btn-group">
-            <a href="" class="btn">
+            <a href="https://forms.zoho.com/tumenlabs/form/Usersignup" class="btn">
               Reserve Your Username
             </a>
           </div>
         </div>
         <div class="header__img">
-          <!-- <picture>
-            <source
-              media="(max-width: 560px)"
-              srcset="./imgs/header-ui-mobile.png"
-            />
             <img
               loading="lazy"
-              src="./imgs/header-ui-desktop.png"
+              src="./imgs/walletwatch-demo.svg"
               alt="Mobile Image"
               class="img-screen-ui"
             />
-          </picture> -->
-          <picture>
-            <source
-              media="(max-width: 560px)"
-              srcset="./imgs/walletwatch-demo.png"
-            />
-            <img
-              loading="lazy"
-              src="./imgs/walletwatch-demo.png"
-              alt="Mobile Image"
-              class="img-screen-ui"
-            />
-          </picture>
         </div>
       </div>
     </header>
-    <footer class="section footer">
-      <!-- <section class="footer__container container">
-        <article class="footer__links">
-          <p class="footer__links-heading">Product</p>
-          <ul class="footer__links-list">
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Product</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Product</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Product</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Product</a>
-            </li>
-          </ul>
-        </article>
-
-        <article class="footer__links">
-          <p class="footer__links-heading">Company</p>
-          <ul class="footer__links-list">
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">About Us</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Careers</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Write for us</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Team</a>
-            </li>
-          </ul>
-        </article>
-
-        <article class="footer__links">
-          <p class="footer__links-heading">Legal</p>
-          <ul class="footer__links-list">
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Terms & Conditions</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Privacy Policy</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Legal Documents</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Copyright</a>
-            </li>
-          </ul>
-        </article>
-
-        <article class="footer__links">
-          <p class="footer__links-heading">Social</p>
-          <ul class="footer__links-list">
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Facebook</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Twitter</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Instagram</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Youtube</a>
-            </li>
-          </ul>
-        </article>
-      </section>
-      <section class="container text-centered">
-        <p>
-          <small>
-            Questions? Contact us at walletwatchofficial@gmail.com
-            <a href="https://www.figmafreebies.com/download/atro-mobile-ui-kit/"
-              >Credits.</a
-            ></small
-          >
-        </p>
-      </section> -->
-      
-      <!-- <section class="container text-centered">
-        <p>
-          <small>
-            Questions? Contact us at walletwatchofficial@gmail.com
-            </small
-          >
-        </p>
-      </section> -->
-    </footer>
+    <footer class="section footer" />
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
