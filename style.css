@@ -306,9 +306,9 @@ body.mobile-nav-open .nav__mobile-nav {
 .cta .btn {
   border: 1px solid #fff;
 }
-.btn-group > .btn:not(:last-child) {
+/*.btn-group > .btn:not(:last-child) {
   margin-right: 0.5em;
-}
+}*/
 .btn.btn-secondary {
   color: var(--prim-color);
   border: 1px solid var(--prim-color);
@@ -321,6 +321,11 @@ body.mobile-nav-open .nav__mobile-nav {
 .btn.btn-twitter {
   color: var(--white);
   background: var(--twitter-color);
+}
+.btn-reserve {
+  text-align: center;
+  align-items: center;
+  width: 13.7em;
 }
 
 /* sections */
@@ -434,9 +439,13 @@ body.mobile-nav-open .nav__mobile-nav {
     max-width: 600px;
     text-align: center;
   }
-  .btn-group {
+  /*.btn-group {
     text-align: center;
     align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }*/
+  .btn-reserve {
     margin: 0 auto;
     margin-bottom: 3em;
   }
